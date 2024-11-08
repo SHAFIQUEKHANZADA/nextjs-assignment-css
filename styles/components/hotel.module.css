@@ -1,0 +1,16 @@
+.main {
+    background-color: #F2F3FA;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 640px) {
+    .main {
+        padding-bottom: 40%;
+    }
+}

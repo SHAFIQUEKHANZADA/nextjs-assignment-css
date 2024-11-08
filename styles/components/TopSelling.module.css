@@ -1,0 +1,120 @@
+.mainDiv {
+    margin-top: 7rem
+        /* 112px */
+    ;
+}
+
+.firstMainDiv {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.firstPara {
+    color: #727692;
+    font-weight: 600;
+}
+
+.firstH1 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.secondMainPara {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.cards {
+    border-radius: 1.5rem; /* 24px */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 280px;
+    height: 385px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.cardDivOne {
+    width: 100%;
+    height: 66.666667%;
+    overflow: hidden;
+}
+.cardImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.cardDivTwo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 16px;
+    margin-top: 4px;
+}
+.cardParaOne {
+    color: #727692;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.cardDivThree {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 16px;
+    margin-bottom: 24px;
+    gap: 12px;
+}
+.cardArrows {
+    color: black; /* Default text color */
+    transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transition */
+}
+
+.cardArrows:hover {
+    color: #3b82f6; /* Color on hover */
+}
+
+
+@media (max-width: 768px) {
+    .mainDiv {
+        margin-top: 8rem
+            /* 128px */
+        ;
+    }
+    .secondMainPara {
+        flex-direction: column;
+    }
+    .cards {
+        max-width: 280px;
+        height: 385px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainDiv {
+        margin-top: 96px;
+    }
+    .firstH1 {
+        font-size: 24px;
+    }
+    .cards {
+        max-width: 250px;
+        height: 350px;
+    }
+}

@@ -1,0 +1,148 @@
+.mainContainer {
+    height: calc(100vh - 120px);
+    z-index: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5vw;
+    display: flex;
+}
+
+.leftDiv {
+    flex: 1;
+    padding: 0px 1vw;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.h3Div {
+    color: #DF6951;
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-top: 20px;
+}
+.h1Div {
+   scroll-margin: 80px;
+   font-size: 5.1vw;
+   font-weight: 700;
+   letter-spacing: -0.025em;
+   line-height: 70px;
+   margin-top: 1rem 
+}
+.spanDiv {
+    position: relative; 
+    z-index: 10;
+}
+.insideDiv {
+    position: absolute;
+    bottom: 0px;
+    left: 0.25rem /* 4px */;
+    width: 250px;
+    z-index: 0;
+}
+.paraDiv {
+    width: 91.666667%;
+    color: #727692;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 1rem /* 16px */;
+}
+.btnDivOne {
+    display: flex;
+    gap: 1.75rem /* 28px */;
+    margin-top: 1.25rem /* 20px */;
+}
+
+.btnOne {
+    background-color: #F1A501;
+    color: white;
+    font-size: 0.875rem /* 14px */;
+    line-height: 1.25rem /* 20px */;
+    border-radius: 0.375rem /* 6px */;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1);  
+}
+.divInnerTwo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem /* 16px */;
+    padding: 0.25rem 0px;
+    cursor: pointer;
+}
+.btnTwo {
+    background-color: #DF6951;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.1); 
+    padding: 0.75rem ;
+    border-radius: 9999px;
+    color: white;
+    font-size: 1.25rem /* 20px */;
+    line-height: 1.75rem /* 28px */;
+}
+.spanInner {
+    color: #727692;
+}
+
+.rightDiv {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem /* 64px */;
+    width: 40vw;
+}
+.rightImgMain {
+    z-index: 10;
+}
+.leftImg {
+    position: absolute;
+    left: 2.4vw;
+    top: 3vw;
+    z-index: 0;
+    width: 160px;
+}
+.rightImg {
+    position: absolute;
+    right: 1.8vw;
+    top: 0.5rem;
+    z-index: 0;
+}
+
+
+@media (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .h3Div {
+        font-size: 3.5vw;
+    }
+    .mainContainer {
+        margin-top: 15%;
+    }
+    .h1Div {
+        font-size: 10.3vw;
+        line-height: 60px;
+        margin-top: 0.5rem
+    }
+    .insideDiv {
+        width: 35vw;
+    }
+    .paraDiv {
+        font-weight: 300;
+        font-size: 14px;
+    }
+    .rightDiv {
+        width: 85vw;
+    }
+    .leftImg {
+        left: 1vw;
+        top: 1vw;
+        width: 30vw;
+    }
+    .rightImg {
+        right: -2vw;
+        top: 0.25rem /* 4px */;
+    }
+}

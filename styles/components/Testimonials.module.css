@@ -1,0 +1,249 @@
+.mainDiv {
+    display: flex;
+    flex-direction: row;  
+    margin-top: 160px;
+    margin-left: 11vw;  
+    margin-right: 11vw;  
+    margin-bottom: 2.5rem;  
+    gap: 1.5vw;  
+}
+
+.firstPara {
+    color: #5E6282;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.tOneDiv {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.tOneDivInner {
+    overflow: hidden;
+}
+.tOneDivInnerInner {
+    display: flex;
+    transition: transform 0.7s;
+}
+.tOneDivInnerInnerHeading {
+    font-weight: 700;
+    font-size: 48px;
+    width: 90%;
+    margin-top: 8px;
+}
+
+.tOneDivInnerSec {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 32px;
+    gap: 16px;
+}
+
+.tTwoDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.cardContainer {
+    position: relative;
+    width: 30vw;
+    height: 18vw;
+}
+
+.cardImgDiv {
+    position: absolute;
+    top: -2.25rem /* -36px */;
+    left: -2.25rem /* -36px */;
+    width: 80px;
+    height: 80px;
+}
+
+.cardImg {
+    border-radius: 9999px;
+    border: 4px white;
+    height: 66px;
+    width: 66px;
+}
+
+.tContent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.tText {
+    color: #4b5563;
+    font-size: 1vw;
+    line-height: 20px;
+    margin-top: 8px;
+    margin-bottom: 2vw;
+}
+
+.tContentDiv {
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+.tContentDivH1 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #586282;
+}
+.tContentDivPara {
+    font-size: 1.1vw;
+    color: #586282;
+}
+
+.tContentDivLast {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 5rem /* 80px */;
+    margin-top: 0px;
+}
+
+.iconBtnUp {
+    right: 1.5rem /* 24px */;
+    top: 0px;
+    padding: 0.5rem /* 8px */;
+    border-radius: 9999px;
+    color:  #374151;
+}
+.iconBtnUp:hover {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #d1d5db ;
+}
+.iconBtnDown {
+    right: 1.5rem /* 24px */;
+    bottom: 0px;
+    padding: 0.5rem /* 8px */;
+    border-radius: 9999px;
+    color:  #374151;
+}
+.iconBtnDown:hover {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #d1d5db ;
+}
+
+@media (max-width: 950px) {
+    .mainDiv {
+        flex-direction: column;
+        margin-left: 7rem;  
+        margin-right: 7rem;  
+    }
+    .cardContainer {
+        position: relative;
+        width: 400px;
+        height: 230px;
+    }
+    .tContentDivH1 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #586282;
+    }
+    .tContentDivPara {
+        font-size: 15px;
+        color: #586282;
+    }
+    .tContent {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1vw;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .tText {
+        color: #4b5563;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 8px;
+        margin-bottom: 2vw;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .mainDiv {
+        flex-direction: column;
+        margin-left: 7rem;  
+        margin-right: 7rem;  
+    }
+    .cardContainer {
+        width: 400px;
+        height: 230px;
+    }
+    .cardImgDiv {
+        top: -20px;
+        left: -24px;
+    }
+    .tText {
+        font-size: 15px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4; /* Limits content to 4 lines */
+        line-height: 1.5em; /* Adjust based on font size */
+        max-height: calc(1.5em * 4); /* Ensures max-height aligns with 4 lines */
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainDiv {
+        margin-top: 120px;
+        margin-left: 1.75rem;  
+        margin-right: 1.75rem;  
+    }
+    .tOneDivInnerInnerHeading {
+        font-size: 30px;
+    }
+    .tOneDivInnerSec {
+        justify-content: center;
+        gap: 4px;
+        margin-top: 22px;
+    }
+    .tTwoDiv {
+        height: 180px;
+        margin-top: 20vw;
+    }
+    .cardContainer {
+        width: 70vw;
+        height: 50vw;
+    }
+    .cardImgDiv {
+        top: -4vw;
+        left: -4vw;
+    }
+    .cardImg {
+        height: 10vw;
+        width: 10vw;
+    }
+    
+    .tContentDiv {
+        margin-bottom: 8px;
+    }
+    .tContentDivH1 {
+        font-size: 4vw;
+    }
+    .tContentDivPara {
+        font-size: 3.2vw;
+    }
+    .tText {
+        font-size: 3.2vw;
+    }
+    .tContentDivLast {
+        gap: 24px;
+        padding-left: 8vw;
+        margin-top: 8vw;
+    }
+}
