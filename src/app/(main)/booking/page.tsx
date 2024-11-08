@@ -6,7 +6,7 @@ import styles from "../../../../styles/components/books.module.css"
 const Booking = () => {
     const [selected, setSelected] = useState("option1");
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSelected(e.target.value); // Set selected radio on click
+        setSelected(e.target.value);  
     };
 
     const [showInput, setShowInput] = useState(false);
