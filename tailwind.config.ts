@@ -9,12 +9,22 @@ export default {
   theme: {
     extend: {
       animation: {
-        scroll: 'scroll 5s linear infinite',  
+        'scroll-left': 'scrollLeft 5s linear infinite',
+        'scroll-right': 'scrollRight 5s linear infinite',
+        'move-across': 'moveAcross 10s linear infinite',
       },
       keyframes: {
-        scroll: {
+        scrollLeft: {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        scrollRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        moveAcross: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100vw)' },  
         },
       },
       colors: {

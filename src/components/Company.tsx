@@ -4,7 +4,7 @@ import styles from "../../styles/components/Company.module.css"
 const Company = () => {
   return (
     <div className={styles.mainDiv}>
-      <div className="flex lg:gap-14 lg:py-14 md:gap-10 gap-1 animate-scroll lg:animate-none md:animate-none items-center">
+      <div className="flex lg:gap-14 lg:py-14 md:gap-10 gap-1 animate-scroll-left md:animate-none items-center">
         {/* Company Logo Containers */}
         <div className={styles.company}>
           <Image
@@ -12,7 +12,7 @@ const Company = () => {
             alt="Axon logo"
             width={110}
             height={90}
-            className="object-contain lg:h-[180px] lg:w-[280px] md:h-[180px] md:w-[280px]"
+            className="object-contain   md:h-[180px] md:w-[280px]"
           />
         </div>
 
@@ -22,7 +22,7 @@ const Company = () => {
             alt="Jetstart logo"
             width={120}
             height={90}
-            className="object-contain lg:h-[180px] lg:w-[280px] md:h-[180px] md:w-[280px]"
+            className="object-contain   md:h-[180px] md:w-[280px]"
           />
         </div>
 
@@ -52,7 +52,7 @@ const Company = () => {
             alt="Alitalia logo"
             width={110}
             height={90}
-            className="object-contain lg:h-[180px] lg:w-[280px] md:h-[180px] md:w-[280px]"
+            className="object-contain   md:h-[180px] md:w-[280px]"
           />
         </div>
 
