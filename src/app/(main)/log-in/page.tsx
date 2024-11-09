@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
 import { FiEye, FiEyeOff } from 'react-icons/fi'
 import { RiLockPasswordFill } from 'react-icons/ri'
+import styles from "../../../../styles/components/login.module.css"
 
 const LogIn = () => {
     const [passwordVisible, setPasswordVisible] = useState(false)
@@ -14,46 +15,46 @@ const LogIn = () => {
     }
 
     return (
-        <div className='min-h-screen flex  justify-center items-center bg-slate-200 relative'>
-            <div className='flex md:flex-row flex-col w-full justify-center items-center '>
+        <div className={styles.main}>
+            <div className={styles.innerMain}>
 
-                {/* Left side with the image */}
-                <div className='flex justify-center items-center relative'>
-                    <div className='md:w-[56vw] w-[90%] h-full justify-start bg-slate-200'>
+                {/* Left side   */}
+                <div className={styles.mainLeftDiv}>
+                    <div className={styles.innerLeftDiv}>
                         <Image src={"/images/login.png"} alt='login' width={800} height={500} className='w-full drop-shadow-2xl' />
                     </div>
                 </div>
 
-                {/* Right side with the inputs */}
-                <div className=''>
-                    <div className='md:w-[37vw] w-[95vw]  h-auto bg-slate-200 p-8  shadow-2xl'>
-                        <h1 className='text-3xl font-bold mb-6 text-center'>Login</h1>
+                {/* Right side  */}
+                <div>
+                    <div className={styles.mainRight}>
+                        <h1 className={styles.mainRightH1}>Login</h1>
                         <form className='space-y-7'>
                             <div>
-                                <label htmlFor="Email" className='mb-2 font-bold text-[18px] text-gray-700'>Email</label>
-                            <div className='relative'>
-                                <AiOutlineMail className='absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500' />
+                                <label htmlFor="Email" className={styles.firstLabel}>Email</label>
+                            <div className={styles.outerDiv}>
+                                <AiOutlineMail className={styles.outerDivIcon} />
                                 <input
                                     type='email'
                                     id='email'
-                                    className='w-full px-4 pl-12 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500'
+                                    className={styles.mainInput}
                                     placeholder='Enter your email'
                                 />
                             </div>
 
                             </div>
                            <div>
-                            <label htmlFor="Password" className='mb-2 font-bold text-[18px] text-gray-700'>Password</label>
-                            <div className='relative'>
-                            <RiLockPasswordFill className='absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500' />
+                            <label htmlFor="Password" className={styles.firstLabel}>Password</label>
+                            <div className={styles.outerDiv}>
+                            <RiLockPasswordFill className={styles.outerDivIcon} />
                                 <input
-                                    type={passwordVisible ? 'text' : 'password'} // Toggle password visibility
+                                    type={passwordVisible ? 'text' : 'password'}  
                                     id='password'
-                                    className='w-full px-4 pl-12 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500'
+                                    className={styles.mainInput}
                                     placeholder='Enter your password'
                                 />
                                 <div
-                                    className='absolute right-4 top-1/2 transform -translate-y-1/2 cursor-pointer'
+                                    className={styles.eye}
                                     onClick={togglePassword}
                                 >
                                     {passwordVisible ? <FiEyeOff className='text-gray-500' /> : <FiEye className='text-gray-500' />}
@@ -61,18 +62,18 @@ const LogIn = () => {
 
                             </div>
                             <div className='flex'>
-                                <p><a href="/log-in" className='text-blue-500 underline text-[14px]'>forgot password?</a></p>
+                                <p><a href="/log-in" className={styles.forgot}>forgot password?</a></p>
                             </div>
 
                             </div>
                             <button
                                 type='submit'
-                                className='w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition duration-300'
+                                className={styles.btn}
                             >
                                 Login
                             </button>
-                            <div className='flex justify-center pt-16 pb-4'>
-                                <p className='text-[14px]'>Don&apos;t have an account ? <span><Link href="/sign-up" className='text-blue-500 underline'>Sign Up</Link></span></p>
+                            <div className={styles.lastDiv}>
+                                <p className={styles.lastP}>Don&apos;t have an account ? <span><Link href="/sign-up" className={styles.lastpSpan}>Sign Up</Link></span></p>
                             </div>
                         </form>
                     </div>
