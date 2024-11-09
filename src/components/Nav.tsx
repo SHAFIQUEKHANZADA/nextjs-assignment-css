@@ -20,33 +20,33 @@ const Nav = () => {
                     src="/images/Decore.png"
                     alt="Logo"
                     width={320}
-                    height={100}  
-                    className={styles.mainImg} 
+                    height={100}
+                    className={styles.mainImg}
                 />
             </div>
-            
+
             <div className={styles.mainDivThree}>
                 {/* left - Logo */}
                 <div className="z-20">
-                    <Image src={"/images/roamly.png"} alt="roamly" width={120} height={0} className="w-[22vw] md:w-[140px]"/>
+                    <Image src={"/images/roamly.png"} alt="roamly" width={120} height={0} className="w-[22vw] md:w-[140px]" />
                 </div>
 
                 {/* right - Menu */}
                 <div className="flex items-center md:gap-[4vw] z-20">
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex lg:gap-16 md:gap-4">
-                        <li>Destinations</li>
+                        <Link href={"/"}><li>Home</li></Link>
                         <Link href={"/hotels"}><li>Hotels</li></Link>
-                        <li>Flights</li>
+                        <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
                     </ul>
 
                     {/* Buttons */}
                     <div className="hidden md:flex items-center gap-4 lg:gap-14">
-                        <button>Login</button>
-                        <button className="px-3 py-1 border border-zinc-950 rounded-md shadow-inner">
+                        <Link href={"/log-in"}>     <button>Login</button></Link>
+                        <Link href={"/sign-up"}>      <button className="px-3 py-1 border border-zinc-950 rounded-sm shadow-inner">
                             Sign up
-                        </button>
+                        </button></Link>
                     </div>
 
                     {/* Language Selector */}
@@ -79,14 +79,14 @@ const Nav = () => {
                         } absolute top-full left-0 w-full bg-white dark:bg-gray-800 text-black dark:text-white md:hidden z-50`}
                 >
                     <ul className="flex flex-col items-center gap-4 py-4">
-                        <li>Destinations</li>
+                        <Link href={"/"}><li>Home</li></Link>
                         <Link href={"/hotels"}><li>Hotels</li></Link>
-                        <li>Flights</li>
+                        <Link href={"/flights"}><li>Flights</li></Link>
                         <Link href={"/booking"}><li>Bookings</li></Link>
-                        <button className="w-full py-2 flex justify-center items-center gap-1">Login <span><IoLogInOutline className="block md:hidden text-[5vw]" /></span></button>
-                        <button className="w-full py-2 flex justify-center items-center gap-1">
+                        <Link href={"/log-in"}>  <button className="w-full py-2 flex justify-center items-center gap-1">Login <span><IoLogInOutline className="block md:hidden text-[5vw]" /></span></button></Link>
+                        <Link href={"/sign-up"}>     <button className="w-full py-2 flex justify-center items-center gap-1">
                             Sign up <span className="block md:hidden text-[5vw]"><MdPersonAddAlt1 /></span>
-                        </button>
+                        </button> </Link>
                     </ul>
                 </div>
             </div>

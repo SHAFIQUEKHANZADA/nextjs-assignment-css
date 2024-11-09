@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { IoIosPlay } from 'react-icons/io'
 import styles from "../../styles/components/Hero.module.css"
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -22,7 +23,7 @@ const Hero = () => {
         <p className={styles.paraDiv}>Built Wicket Longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
 
         <div className={styles.btnDivOne}>
-            <button className={styles.btnOne}>Find out more</button>
+           <Link href={"/flights"}> <button className={styles.btnOne}>Find out more</button></Link>
 
             <div className={`${styles.divInnerTwo} group`}>
                 <button className={styles.btnTwo}><IoIosPlay /></button>
