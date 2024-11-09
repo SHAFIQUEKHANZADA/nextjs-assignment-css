@@ -32,7 +32,7 @@ const Company = () => {
             alt="Expedia logo"
             width={120}
             height={90}
-            className="object-contain lg:h-[200px] lg:w-[300px] md:h-[200px] md:w-[300px]"
+            className="object-contain  md:h-[200px] md:w-[300px]"
           />
         </div>
 
@@ -42,7 +42,7 @@ const Company = () => {
             alt="Qantas logo"
             width={120}
             height={90}
-            className="object-contain lg:h-[200px] lg:w-[300px] md:h-[200px] md:w-[300px]"
+            className="object-contain  md:h-[200px] md:w-[300px]"
           />
         </div>
 
